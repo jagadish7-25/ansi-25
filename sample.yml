@@ -6,3 +6,9 @@
       ansible.builtin.yum:
         name: httpd
         state: latest 
+
+    - name: Start httpd
+      ansible.builtin.systemd:
+        name: httpd
+        state: started
+        enabled: yes
