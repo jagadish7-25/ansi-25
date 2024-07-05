@@ -1,0 +1,8 @@
+- name: Declaring Vars
+  hosts: prod
+  vars:
+    HD: I AM PLAYING A HD MOVIE
+  tasks:
+    - name: Printing Vars
+      ansible.builtn.debug:
+      msg: enjoy {{ HD }}
