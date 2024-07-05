@@ -1,5 +1,6 @@
 - name: Install App Server
   hosts: prod
+  become: True 
   tasks:
     - name: Install App Server
       ansible.builtin.yum:
