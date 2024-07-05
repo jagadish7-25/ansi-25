@@ -3,6 +3,6 @@
   vars:
     HD: I AM PLAYING A HD MOVIE
   tasks:
-    - name: Printing Vars
+    - name: Printing Variable
       ansible.builtn.debug:
-      msg: enjoy {{ HD }}
+        msg: enjoy {{ HD }}
