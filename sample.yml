@@ -1,0 +1,7 @@
+- name: Install App Server
+  hosts: prod
+  tasks:
+    - name: Install App Server
+      ansible.builtin.yum:
+        name: httpd
+        state: latest 
